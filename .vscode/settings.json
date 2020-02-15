@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "iostream": "cpp"
+    },
+    // cpp ファイルの末行に空行を一列追加する
+    "files.insertFinalNewline": true,
+    // Microsoftへの利用状況やエラー等のデータ送信を無効にする
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    // コードの実行をターミナルで行う
+    "code-runner.runInTerminal": true,
+    // コードの実行方法を指定
+    "code-runner.executorMap": {
+        "cpp" : "cd $dir && g++ `pkg-config --libs --cflags opencv` -framework OpenCL $fileName -o ../build/$fileNameWithoutExt && ../build/$fileNameWithoutExt",
+    },
+    "clang.executable": "clang++",
+}
